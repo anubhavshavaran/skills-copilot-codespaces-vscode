@@ -2,7 +2,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-    if (req.url === '/comments') {
+    if (req.url) {
         const comments = [
             { "author": "Anne Droid", "comment": "I wanna know what love is..." },
             { "author": "Billy Idol", "comment": "Eyes without a face..." },
